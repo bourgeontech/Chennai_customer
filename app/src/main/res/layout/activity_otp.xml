@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        tools:context=".activity.OtpActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/loginImage"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/yellow_ring_bg">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="@dimen/padding_size_32dp"
+                    android:src="@drawable/login_bg" />
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loginImage"
+                android:layout_marginStart="@dimen/margin_size_12dp"
+                android:layout_marginTop="-60dp"
+                android:layout_marginEnd="@dimen/margin_size_12dp"
+                app:cardCornerRadius="60dp"
+                app:cardElevation="@dimen/margin_size_8dp"
+                app:cardUseCompatPadding="true">
+
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="350dp"-->
+                <!--                android:layout_marginStart="@dimen/margin_size_24dp"-->
+                <!--                android:layout_marginTop="-50dp"-->
+                <!--                android:layout_marginEnd="@dimen/margin_size_24dp"-->
+                <!--                android:background="@drawable/card_bg"-->
+                <!--                android:gravity="top"-->
+                <!--                android:paddingBottom="@dimen/margin_size_24dp">-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/margin_size_24dp"
+                    android:paddingBottom="@dimen/margin_size_24dp">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_size_20dp"
+                            android:fontFamily="@font/iciel_gotham_medium"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_6dp"
+                            android:text="Please enter OTP received on your mobile number" />
+
+                        <com.goodiebag.pinview.Pinview
+                            android:id="@+id/pinview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_size_14dp"
+                            app:cursorVisible="false"
+                            app:forceKeyboard="false"
+                            app:hint=""
+                            app:inputType="number"
+                            app:password="false"
+                            app:pinHeight="32dp"
+                            app:pinLength="6"
+                            app:pinWidth="32dp"
+                            app:splitWidth="4dp" />
+
+
+                        <TextView
+                            android:id="@+id/btnVerify"
+                            android:layout_width="180dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_size_20dp"
+                            android:layout_marginBottom="@dimen/margin_size_12dp"
+                            android:background="@drawable/btn_bg"
+                            android:fontFamily="@font/iciel_gotham_medium"
+                            android:gravity="center"
+                            android:text="VERIFY"
+                            android:textColor="@color/white" />
+
+
+                        <TextView
+                            android:id="@+id/btnGoBack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/iciel_gotham_medium"
+                            android:padding="@dimen/margin_4dp"
+                            android:text="GO BACK" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <!--            </LinearLayout>-->
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

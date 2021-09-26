@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/curved_top_white"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/iciel_gotham_medium"
+        android:gravity="center"
+        android:text="Search by Pincode"
+        android:textSize="@dimen/text_size_12sp" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_size_16dp"
+        android:inputType="number"
+        android:singleLine="true"
+        app:itemCount="6"
+        app:itemSpacing="5dp"
+        app:itemWidth="36dp"
+        app:itemHeight="36dp"
+        app:lineColor="@color/gray"
+        app:lineWidth="0.5dp"
+        app:viewType="rectangle"
+        android:textSize="@dimen/text_size_17sp"/>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/margin_size_24dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/gotham_medium"
+        android:gravity="center"
+        android:text="SEARCH"
+        android:textColor="@color/black_light"
+        android:textStyle="bold" />
+
+</LinearLayout>

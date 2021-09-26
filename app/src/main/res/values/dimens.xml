@@ -1,0 +1,80 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="parent_layout_margin">10dp</dimen>
+
+    <dimen name="padding_4dp">4dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+    <dimen name="padding_size_8dp">8dp</dimen>
+    <dimen name="padding_size_12dp">12dp</dimen>
+    <dimen name="padding_size_16dp">16dp</dimen>
+    <dimen name="padding_size_32dp">32dp</dimen>
+
+    <dimen name="size_2dp">2dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_size_8dp">8dp</dimen>
+    <dimen name="margin_size_8_5dp">8.5dp</dimen>
+    <dimen name="margin_size_12dp">12dp</dimen>
+    <dimen name="margin_size_14dp">14dp</dimen>
+    <dimen name="margin_size_16dp">16dp</dimen>
+    <dimen name="margin_size_20dp">20dp</dimen>
+    <dimen name="margin_size_24dp">24dp</dimen>
+    <dimen name="margin_size_10dp">10dp</dimen>
+    <dimen name="margin_size_32dp">32dp</dimen>
+
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_17sp">17sp</dimen>
+    <dimen name="text_size_19sp">18sp</dimen>
+    <dimen name="text_size_21sp">21sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+
+    <dimen name="scheme_card_size">300dp</dimen>
+    <!--dashboard dimensions -->
+    <dimen name="pledges_item_side_padding">@dimen/padding_4dp</dimen>
+    <dimen name="pledge_card_margin">@dimen/margin_size_8dp</dimen>
+    <dimen name="pledge_card_padding_1">@dimen/padding_size_12dp</dimen>
+    <dimen name="pledge_card_padding_2">@dimen/padding_size_16dp</dimen>
+    <dimen name="pledge_container_spacing_1">@dimen/padding_size_8dp</dimen>
+    <dimen name="pledge_container_spacing_2">@dimen/margin_size_12dp</dimen>
+    <dimen name="pledge_container_spacing">@dimen/padding_4dp</dimen>
+    <dimen name="scheme_container_padding">@dimen/margin_size_16dp</dimen>
+    <dimen name="scheme_container_margin">@dimen/margin_size_16dp</dimen>
+    <dimen name="scheme_container_spacing_3">@dimen/margin_size_16dp</dimen>
+    <dimen name="scheme_container_spacing_2">@dimen/padding_size_8dp</dimen>
+    <dimen name="scheme_container_spacing_1">@dimen/padding_4dp</dimen>
+    <dimen name="pledge_card_margin_bottom">0dp</dimen>
+    <dimen name="description_text_size">@dimen/text_size_12sp</dimen>
+    <dimen name="description_text_size_1">@dimen/text_size_12sp</dimen>
+    <dimen name="description_text_size_5">11dp</dimen>
+    <dimen name="description_text_size_4">@dimen/text_size_14sp</dimen>
+    <dimen name="value_text_size">@dimen/text_size_11sp</dimen>
+    <dimen name="value_text_size_2">@dimen/text_size_17sp</dimen>
+    <dimen name="header_text_size">@dimen/text_size_21sp</dimen>
+    <dimen name="item_weight_text_size">@dimen/text_size_12sp</dimen>
+    <dimen name="pledge_desc_margin">@dimen/margin_4dp</dimen>
+    <dimen name="segment_corner">10dp</dimen>
+    <dimen name="card_radius">6dp</dimen>
+    <dimen name="btn_corner">5dp</dimen>
+    <dimen name="enchanted_view_pager_margin">16dp</dimen>
+
+    <dimen name="opt_round_card_view_default_radius">2dp</dimen>
+    <!-- Elevation value to use for CardViews. Pre-L, it is equal to shadow size. -->
+    <dimen name="opt_round_card_view_default_elevation">2dp</dimen>
+    <!-- Inset shadow for RoundRectDrawableWithShadow. It is used to avoid gaps between the card
+     and the shadow. -->
+    <dimen name="opt_round_card_view_compat_inset_shadow">1dp</dimen>
+
+    <dimen name="cardElevation">8dp</dimen>
+    <dimen name="cardRadius">4dp</dimen>
+    <dimen name="cardRadius_2">2dp</dimen>
+    <dimen name="margin_size_5dp">5dp</dimen>
+    <dimen name="margin_size_7dp">7dp</dimen>
+</resources>

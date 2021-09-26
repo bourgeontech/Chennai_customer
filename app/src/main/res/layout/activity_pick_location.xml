@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.PickLocationActivity">
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/yellow_ring_bg" />
+
+
+            <RelativeLayout
+                android:id="@+id/topBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size_16dp"
+                android:layout_marginTop="@dimen/margin_size_20dp"
+                android:layout_marginEnd="@dimen/margin_size_20dp">
+
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/margin_size_10dp"
+                    android:rotation="180"
+                    android:src="@drawable/forward_arrow"
+                    android:visibility="gone"
+                    app:tint="@color/blue" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_size_24dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/curved_white"
+                android:drawableStart="@drawable/search_icon"
+                android:drawablePadding="@dimen/margin_size_24dp"
+                android:fontFamily="@font/iciel_gotham_medium"
+                android:hint="search categories"
+                android:padding="@dimen/padding_size_12dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/margin_size_24dp"
+                android:layout_marginEnd="@dimen/margin_size_24dp"
+                android:layout_marginBottom="44dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iciel_gotham_medium"
+                    android:text="Categories"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawableEnd="@drawable/forward_arrow"
+                    android:drawablePadding="@dimen/padding_size_8dp"
+                    android:fontFamily="@font/iciel_gotham_medium"
+                    android:text="See All"
+                    android:textColor="@color/blue" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topLayout"
+            android:paddingTop="@dimen/margin_size_20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/margin_size_20dp">
+
+                <LinearLayout
+                    android:id="@+id/btnAddLocation"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/padding_6dp"
+                    android:background="@drawable/curved_white_yellow_border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circle_yellow"
+                        android:padding="@dimen/padding_size_12dp"
+                        android:src="@drawable/location_icon"
+                        app:tint="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/tvAddlocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_6dp"
+                        android:fontFamily="@font/iciel_gotham_medium"
+                        android:gravity="center"
+                        android:text="Add Location"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/locationLayout"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_size_14dp"
+                    android:background="@drawable/curved_white_black_border"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_size_20dp"
+                        android:background="@drawable/line_bg"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/margin_size_10dp"
+                            android:src="@drawable/location_icon"
+                            android:visibility="gone"
+                            app:tint="#B8B8B8" />
+
+                        <TextView
+                            android:id="@+id/edtPinCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/iciel_gotham_medium"
+                            android:hint="Pincode"
+                            android:maxLines="1"
+                            android:padding="@dimen/margin_size_10dp"
+                            android:textSize="@dimen/text_size_14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_size_10dp"
+                        android:background="@drawable/line_bg"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/margin_size_10dp"
+                            android:src="@drawable/location_icon"
+                            android:visibility="gone"
+                            app:tint="#B8B8B8" />
+
+                        <TextView
+                            android:id="@+id/edtLattitude"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/iciel_gotham_medium"
+                            android:hint="Lattitude"
+                            android:maxLines="1"
+                            android:padding="@dimen/margin_size_10dp"
+                            android:textSize="@dimen/text_size_14sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_size_10dp"
+                        android:background="@drawable/line_bg"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/margin_size_10dp"
+                            android:src="@drawable/location_icon"
+                            android:visibility="gone"
+                            app:tint="#B8B8B8" />
+
+                        <TextView
+                            android:id="@+id/edtLong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/iciel_gotham_medium"
+                            android:hint="Longitude"
+                            android:maxLines="1"
+                            android:padding="@dimen/margin_size_10dp"
+                            android:textSize="@dimen/text_size_14sp" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/btnUpdate"
+                        android:layout_width="180dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_size_20dp"
+                        android:layout_marginBottom="@dimen/margin_size_12dp"
+                        android:background="@drawable/btn_bg"
+                        android:fontFamily="@font/iciel_gotham_medium"
+                        android:gravity="center"
+                        android:text="UPDATE"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <TextView
+            android:id="@+id/titleImage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/topLayout"
+            android:layout_marginStart="@dimen/margin_size_24dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginEnd="@dimen/margin_size_24dp"
+            android:background="@drawable/curved_blue"
+            android:fontFamily="@font/iciel_gotham_medium"
+            android:gravity="center"
+            android:padding="@dimen/padding_6dp"
+            android:text="SELECT LOCATION"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_19sp" />
+    </RelativeLayout>
+
+</layout>

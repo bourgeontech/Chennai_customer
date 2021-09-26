@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/margin_size_24dp"
+    android:layout_marginEnd="@dimen/margin_size_24dp"
+    android:background="@drawable/curved_white_20"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_size_24dp"
+        android:fontFamily="@font/homepagebaukasten_bold"
+        android:text="INFO"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/homepagebaukasten_book"
+        android:gravity="center"
+        android:padding="@dimen/padding_size_16dp"
+        android:text="Please enter valid password"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <TextView
+        android:id="@+id/btnDismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_size_20dp"
+        android:background="@drawable/yellow_bg_20"
+        android:fontFamily="@font/iciel_gotham_medium"
+        android:gravity="center"
+        android:padding="@dimen/padding_size_12dp"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

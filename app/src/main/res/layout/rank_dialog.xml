@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/curved_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_size_24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_medium"
+        android:text="Rate shop"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baukasten_book"
+        android:gravity="center"
+        android:textColor="@color/black_light"
+        android:padding="@dimen/margin_size_10dp"
+        android:text="This will help users to find the best store"
+        android:textSize="@dimen/text_size_12sp" />
+
+    <TextView
+        android:id="@+id/rank_dialog_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_medium"
+        android:text="New SHop"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <RatingBar
+        android:id="@+id/dialog_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
+    <TextView
+        android:id="@+id/rank_dialog_button"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/margin_size_20dp"
+        android:background="@drawable/btn_bg"
+        android:focusable="false"
+        android:fontFamily="@font/gotham_medium"
+        android:gravity="center"
+        android:text="Update"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16sp" />
+
+</LinearLayout>

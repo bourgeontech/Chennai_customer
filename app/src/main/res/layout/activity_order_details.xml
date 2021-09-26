@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gray_bg"
+        tools:context=".activity.OrderDetailsActivity">
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/yellow_ring_bg" />
+
+
+            <RelativeLayout
+                android:id="@+id/topBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size_16dp"
+                android:layout_marginTop="@dimen/margin_size_20dp"
+                android:layout_marginEnd="@dimen/margin_size_20dp">
+
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/margin_size_10dp"
+                    android:rotation="180"
+                    android:src="@drawable/forward_arrow"
+                    app:tint="@color/blue" />
+
+                <ImageView
+                    android:id="@+id/help"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/padding_6dp"
+                    android:src="@drawable/ic_baseline_call_24"
+                    android:visibility="visible"
+                    app:tint="@color/blue" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_size_24dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/curved_white"
+                android:drawableStart="@drawable/search_icon"
+                android:drawablePadding="@dimen/margin_size_24dp"
+                android:fontFamily="@font/iciel_gotham_medium"
+                android:hint="search categories"
+                android:padding="@dimen/padding_size_12dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/margin_size_24dp"
+                android:layout_marginEnd="@dimen/margin_size_24dp"
+                android:layout_marginBottom="44dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iciel_gotham_medium"
+                    android:text="Categories"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawableEnd="@drawable/forward_arrow"
+                    android:drawablePadding="@dimen/padding_size_8dp"
+                    android:fontFamily="@font/iciel_gotham_medium"
+                    android:text="See All"
+                    android:textColor="@color/blue" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topLayout"
+            android:clipToPadding="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recylerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_20dp"
+                    android:clipToPadding="false"
+                    android:layoutAnimation="@anim/layout_animation"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/titleImage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/topLayout"
+            android:layout_marginStart="@dimen/margin_size_24dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginEnd="@dimen/margin_size_24dp"
+            android:background="@drawable/curved_blue"
+            android:fontFamily="@font/iciel_gotham_medium"
+            android:gravity="center"
+            android:padding="@dimen/padding_6dp"
+            android:text="ORDER VIEW"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_19sp" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_size_16dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_yellow_border"
+            android:paddingStart="@dimen/margin_size_24dp"
+            android:paddingTop="@dimen/padding_size_16dp"
+            android:paddingEnd="@dimen/margin_size_14dp"
+            android:paddingBottom="@dimen/padding_size_16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/btnSeeList"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/baukasten_book"
+                    android:maxLines="1"
+                    android:text="Order ID: 34567890"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/baukasten_book"
+                    android:maxLines="1"
+                    android:text="2020-10-24"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_16dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/baukasten_book"
+                    android:maxLines="1"
+                    android:text="Amount : 2400"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/homepagebaukasten_book"
+                    android:maxLines="1"
+                    android:text="UnDelivered"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/btnSeeList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:drawableEnd="@drawable/forward_arrow"
+                android:drawablePadding="@dimen/padding_size_8dp"
+                android:drawableTint="@color/green"
+                android:fontFamily="@font/homepagebaukasten_book"
+                android:padding="@dimen/padding_6dp"
+                android:text="See List"
+                android:textColor="@color/green" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
