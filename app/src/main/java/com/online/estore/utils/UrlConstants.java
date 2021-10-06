@@ -2,8 +2,7 @@ package com.online.estore.utils;
 
 public class UrlConstants {
 
-    public static String BASE_URL = "http://day2night.in/customer/";
-
+    public static String BASE_URL = "http://estore.day2night.in/customer/";
     public static String LOGIN = BASE_URL + "login";
     public static String REGISTER = BASE_URL + "register";
     public static String SHOP_LIST = BASE_URL + "shopList";

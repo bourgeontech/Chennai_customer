@@ -68,7 +68,7 @@ public class CartActivity extends BaseActivity implements VolleyInterface, View.
     ActivityCartBinding binding;
     CartAdapter adapter;
     ArrayList<CartDomain> cartList = new ArrayList<>();
-
+    ArrayList<String> shoplit = new ArrayList<>();
     String tot = "0";
     double ttot= 0;
     int dFee = 0;
@@ -455,6 +455,7 @@ public class CartActivity extends BaseActivity implements VolleyInterface, View.
                     jsonObject.put("sub_category_id", cartList.get(i).getSub_category_id());
                     jsonObject.put("product_id", cartList.get(i).getProduct_id());
                     jsonObject.put("quantity", cartList.get(i).getQuantity());
+                  //  jsonObject.put("pack_id", "nos");
 //                jsonObject.put("unit", cartList.get(i).uni());
 //                jsonObject.put("unit", "Kg");
                     i=i+1;
@@ -560,15 +561,36 @@ public class CartActivity extends BaseActivity implements VolleyInterface, View.
     }
 
 
+//    private void notification() {
+//
+//        Set<CartDomain> uniquecart = new HashSet<>(cartList);
+//        int i = 0;
+//        for (CartDomain cartDomain : uniquecart) {
+//            Log.d("cartDomain-->", cartDomain.getShop_id());
+//            callNotificationAPI(cartDomain.getShop_id(), i);
+//            i++;
+//        }
+//    }
+
     private void notification() {
 
         Set<CartDomain> uniquecart = new HashSet<>(cartList);
         int i = 0;
+
         for (CartDomain cartDomain : uniquecart) {
+
+            if(shoplit!=null)
+            {
+                if(!(shoplit.contains(cartDomain.getShop_id())))
+                    shoplit.add(cartDomain.getShop_id());
+            }
+
             Log.d("cartDomain-->", cartDomain.getShop_id());
-            callNotificationAPI(cartDomain.getShop_id(), i);
-            i++;
+//            callNotificationAPI(cartDomain.getShop_id(), i);
+//            i++;
         }
+        callNotificationAPI(shoplit.get(i), i);
+        i++;
     }
 
     private void callNotificationAPI(String shop_id, int i) {
