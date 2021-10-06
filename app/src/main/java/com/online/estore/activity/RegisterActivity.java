@@ -199,7 +199,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         CommonUtils.setProgressBar(this);
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/customer/register.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/customer/register.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

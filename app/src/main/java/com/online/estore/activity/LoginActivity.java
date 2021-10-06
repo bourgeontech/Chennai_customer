@@ -125,7 +125,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/customer/login.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/customer/login.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

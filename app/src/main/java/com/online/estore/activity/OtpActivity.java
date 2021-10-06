@@ -109,7 +109,7 @@ public class OtpActivity extends BaseActivity implements View.OnClickListener, V
 
         CommonUtils.setProgressBar(this);
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/customer/register.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/customer/register.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -301,7 +301,7 @@ public class OtpActivity extends BaseActivity implements View.OnClickListener, V
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://Day2mart.com/customer/login.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/customer/login.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

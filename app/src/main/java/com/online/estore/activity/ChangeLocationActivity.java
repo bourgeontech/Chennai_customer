@@ -229,7 +229,7 @@ public class ChangeLocationActivity extends BaseActivity implements View.OnClick
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/customer/customerLocationSave.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/customer/customerLocationSave.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
